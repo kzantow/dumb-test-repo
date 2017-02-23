@@ -1,6 +1,11 @@
 pipeline {
   agent any
   stages {
+    stage('Pre-Build') {
+      steps {
+        sh(script: 'echo "woot"')
+      }
+    }
     stage('Parallel Build') {
       steps {
         parallel(
@@ -16,7 +21,7 @@ pipeline {
     }
     stage('Deploy To Test') {
       steps {
-        sh(script: 'magicDeployScript')
+        sh(script: 'echo this one works')
       }
     }
   }

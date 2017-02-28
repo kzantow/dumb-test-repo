@@ -4,11 +4,12 @@ pipeline {
     stage('Parallel Build') {
       steps {
         parallel(
-          Chrome: {
-            sh(script: 'echo \'do real work\'')
+          "Chromez": {
+            sh 'echo \'do real work\''
+            
           },
-          Safari: {
-            sh(script: 'echo \'do more real work\'')
+          "Safari": {
+            sh 'echo \'do more real work\''
             
           }
         )
@@ -16,7 +17,7 @@ pipeline {
     }
     stage('Deploy To Test') {
       steps {
-        sh(script: 'magicDeployScript')
+        sh 'magicDeployScript'
       }
     }
   }

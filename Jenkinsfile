@@ -3,17 +3,18 @@ pipeline {
   stages {
     stage('Pre-Build') {
       steps {
-        sh(script: 'echo "woot"')
+        sh 'echo "woot"'
       }
     }
     stage('Parallel Build') {
       steps {
         parallel(
-          Chrome: {
-            sh(script: 'echo \'do real work\'')
+          "Chrome": {
+            sh 'echo \'do real work\''
+            
           },
-          Safari: {
-            sh(script: 'echo \'do more real work\'')
+          "Safari": {
+            sh 'echo \'do more real work\''
             
           }
         )
@@ -21,7 +22,7 @@ pipeline {
     }
     stage('Deploy To Test') {
       steps {
-        sh(script: 'echo this one works')
+        sh 'echo this one works'
       }
     }
   }

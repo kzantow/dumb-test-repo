@@ -4,7 +4,7 @@ pipeline {
     stage('Parallel Build') {
       steps {
         parallel(
-          "Chromez": {
+          "Chrome": {
             sh 'echo \'do real work\''
             
           },

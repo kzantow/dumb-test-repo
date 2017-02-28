@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Pre-Build') {
       steps {
-        sh 'echo "woot"'
+        sh 'echo "wootly"'
       }
     }
     stage('Parallel Build') {

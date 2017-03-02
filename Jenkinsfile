@@ -22,7 +22,7 @@ pipeline {
     }
     stage('Deploy To Test') {
       steps {
-        sh 'echo this one works'
+        sh 'breakit'
       }
     }
   }

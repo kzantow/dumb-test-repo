@@ -18,7 +18,7 @@ pipeline {
     stage('Deploy To Test') {
       steps {
         sh '''#magicDeployScript
-fixit'''
+echo fixit'''
       }
     }
   }

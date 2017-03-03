@@ -17,8 +17,7 @@ pipeline {
     }
     stage('Deploy To Test') {
       steps {
-        sh '''echo fixit
-'''
+        sh 'breakit'
       }
     }
   }

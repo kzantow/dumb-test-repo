@@ -17,7 +17,7 @@ pipeline {
     }
     stage('Deploy To Test') {
       steps {
-        sh 'breakit'
+        sh '# fix it'
       }
     }
   }

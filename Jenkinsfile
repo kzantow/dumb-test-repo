@@ -5,7 +5,7 @@ pipeline {
       steps {
         parallel(
           "Chromez": {
-            sh 'echo \'do lots of real work\''
+            sh 'echo \'do real work\''
             
           },
           "Safari": {

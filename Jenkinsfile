@@ -6,7 +6,7 @@ pipeline {
         parallel(
           "Chromez": {
             sh 'echo \'do real work\''
-            asdf
+            //asdf
           },
           "Safari": {
             sh 'echo \'do more real work\''

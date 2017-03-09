@@ -17,7 +17,8 @@ pipeline {
     }
     stage('Deploy To Test') {
       steps {
-        sh '# fix it'
+        sh '''# fix it
+echo woorrd'''
       }
     }
   }

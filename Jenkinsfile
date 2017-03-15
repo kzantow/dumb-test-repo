@@ -4,7 +4,7 @@ pipeline {
     stage('Parallel Build') {
       steps {
         parallel(
-          "Chromez": {
+          "": {
             sh 'echo \'do real workz\''
             
           },

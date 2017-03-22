@@ -4,7 +4,7 @@ pipeline {
     stage('Parallel Build') {
       steps {
         parallel(
-          "": {
+          "error": {
             sh 'echo \'do real workz\''
             
           },
